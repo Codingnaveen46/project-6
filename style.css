@@ -1,0 +1,155 @@
+body{
+    height: 100vh;
+    background-color:aquamarine;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.laptop_large,.laptop,.mobile,.tablet{
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+/* media query using max-width */
+@media  screen and(max-width:1440px) {
+    body{
+        background-color: #500202;
+    }
+    .laptop_large{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px){
+    body{
+        background-color: chartreuse;
+    }
+   .laptop_large{
+    display: none;
+   }
+   .laptop{
+    display: block;
+   }
+}
+
+@media screen and (max-width:768px){
+    body{
+        background-color:green;
+    }
+
+    .laptop_large{
+        display: none;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+}
+
+@media screen and(max-width:425px){
+    body{
+        background-color: yellow;
+        
+    }
+    .laptop_large{
+        display: none;
+    }
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
+/* media query for min screen  */
+
+@media screen and (min-width:0px){
+    body{
+        background-color: rgb(80, 6, 21);
+        
+    }
+    .mobile{
+        display: block;
+    }
+    .tablet{
+        display: none;
+    }
+    .laptop{
+        display: none;
+    }
+    .laptop_large{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: rgb(38, 218, 235);
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    .laptop{
+        display: none;
+    }
+    .laptop_large{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    body{
+        background-color: rgb(87, 44, 44);
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .laptop{
+        display: block;
+    }
+    .laptop_large{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1440px){
+    body{
+        background-color: rgb(21, 49, 22);
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .laptop{
+        display: none;
+    }
+    .laptop_large{
+        display: block;
+    }
+}
+
+/* media screen with both the background */
+
+@media  screen and (min-width:425px) and (max-width:768) {
+    body{
+        background-color: darkgray;
+    }
+    
+}
